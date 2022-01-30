@@ -1,4 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+@font-face {
+  font-family: "Fuse V.2 Display";
+  src: url("./assets/fonts/FuseV.2Display-ExtraBold.otf") format("opentype");
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fuse V.2 Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/FuseV.2Display-Regular.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/SourceSansPro-Regular.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./assets/fonts/SourceSansPro-Semibold.otf") format("opentype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./assets/fonts/SourceSansPro-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-display: swap;
+}
 
 * {
   box-sizing: border-box;
@@ -37,7 +72,7 @@ body {
 .navigation__link {
   color: #282d30;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .navigation__link:not(:last-of-type) {
