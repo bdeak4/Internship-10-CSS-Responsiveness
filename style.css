@@ -41,7 +41,13 @@
 
 body {
   margin: 0;
+  padding: 0 25px;
   font-family: "Source Sans Pro", sans-serif;
+}
+
+.limit-width {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /* navigation */
@@ -50,9 +56,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 25px;
-  max-width: 1440px;
-  margin: 0 auto;
+  padding: 40px 0;
 }
 
 .navigation__links--desktop {
@@ -100,4 +104,123 @@ body {
 
 .hamburger__bar:not(:last-of-type) {
   margin-bottom: 10px;
+}
+
+/* Što je DUMP Internship? */
+
+.about {
+  margin: 100px 0;
+  position: relative;
+}
+
+.about__background {
+  background-color: #f7f9fc;
+  position: absolute;
+  top: 75px;
+  width: calc(100% - 25px);
+  height: calc(100% - 2 * 75px);
+  z-index: -1;
+  border-radius: 0px 40px 40px 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .about__background {
+    width: calc(100% - 135px);
+  }
+}
+
+.about__title {
+  font-family: "Fuse V.2 Display";
+  font-size: 56px;
+  line-height: 60px;
+  font-weight: 800;
+  color: rgb(40, 45, 48);
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .about__title {
+    font-size: 112px;
+    line-height: 120px;
+  }
+}
+
+.about__title--green {
+  color: rgb(68, 199, 155);
+}
+
+.about__description {
+  font-family: "Fuse V.2 Display";
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(40, 45, 48);
+  max-width: 380px;
+  margin: 12px 0px 0px;
+}
+
+.about__cards {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 180px;
+}
+
+.about__card {
+  padding: 24px;
+  background-color: #fff;
+  max-width: 280px;
+  box-shadow: rgba(214, 224, 233, 0.06) 0px 2px 6px,
+    rgba(214, 224, 233, 0.12) 0px 4px 16px,
+    rgba(214, 224, 233, 0.31) 0px 8px 40px;
+  border-radius: 32px;
+  margin-bottom: 32px;
+}
+
+.about__card__title {
+  text-transform: uppercase;
+  margin: 28px 0px 8px;
+  font-size: 16px;
+}
+
+.about__card__title--blue {
+  color: rgb(109, 165, 227);
+}
+
+.about__card__title--green {
+  color: rgb(68, 199, 155);
+}
+
+.about__card__title--purple {
+  color: rgb(176, 135, 237);
+}
+
+.about__card__title--red {
+  color: rgb(174, 37, 54);
+}
+
+@media screen and (min-width: 768px) {
+  .about__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: calc(2 * 280px + 32px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .about__header {
+    margin-left: 216px;
+  }
+
+  .about__cards {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .about__card:not(:last-of-type) {
+    margin-right: 32px;
+  }
 }

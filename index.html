@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navigation">
-      <img src="assets/dump.png" width="95" class="navigation__logo" />
+    <nav class="navigation limit-width">
+      <img
+        src="assets/dump.png"
+        width="95"
+        class="navigation__logo"
+        alt="dump logo"
+      />
       <div class="navigation__links navigation__links--desktop">
         <a href="#" class="navigation__link">Događaji</a>
         <a href="#" class="navigation__link">Projekti</a>
@@ -24,5 +29,89 @@
         </div>
       </div>
     </nav>
+
+    <div class="about">
+      <div class="about__background"></div>
+      <div class="about__content limit-width">
+        <div class="about__header">
+          <h2 class="about__title">
+            Što je DUMP
+            <br />
+            <span class="about__title--green">Internship?</span>
+          </h2>
+          <p class="about__description">
+            To je besplatan šestomjesečni program kroz koji podučavamo buduće
+            generacije dumpovaca.
+          </p>
+        </div>
+        <div class="about__cards">
+          <div class="about__card">
+            <img
+              src="assets/knowledge.png"
+              height="48"
+              width="48"
+              alt=""
+              class="about__card__icon"
+            />
+            <h3 class="about__card__title about__card__title--blue">
+              6 mjeseci
+            </h3>
+            <p>
+              Počinjemo u studenom i družimo se na predavanjima i radionicama
+              sve do svibnja.
+            </p>
+          </div>
+          <div class="about__card">
+            <img
+              src="assets/heart.png"
+              height="48"
+              width="48"
+              alt=""
+              class="about__card__icon"
+            />
+            <h3 class="about__card__title about__card__title--green">
+              Besplatno
+            </h3>
+            <p>
+              Zajedno učimo i širimo znanje potpuno besplatno za sve koji žele
+              činiti isto.
+            </p>
+          </div>
+          <div class="about__card">
+            <img
+              src="assets/people.png"
+              height="48"
+              style="padding-top: 4px; padding-bottom: 5px"
+              width="48"
+              alt=""
+              class="about__card__icon"
+            />
+            <h3 class="about__card__title about__card__title--purple">
+              16 do 24 godine
+            </h3>
+            <p>
+              Nismo prestrogi, ali ciljamo na mlade srednjoškolske i studentske
+              dobi.
+            </p>
+          </div>
+          <div class="about__card">
+            <img
+              src="assets/book.png"
+              height="48"
+              width="48"
+              alt=""
+              class="about__card__icon"
+            />
+            <h3 class="about__card__title about__card__title--red">
+              Sve razine znanja
+            </h3>
+            <p>
+              Krećemo od samih osnova pa su početnici više nego dobrodošli, kao
+              i oni iskusniji.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
