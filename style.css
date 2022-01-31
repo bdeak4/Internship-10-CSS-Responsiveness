@@ -50,6 +50,33 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  font-family: "Fuse V.2 Display";
+  font-size: 56px;
+  line-height: 60px;
+  font-weight: 800;
+  color: rgb(40, 45, 48);
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 112px;
+    line-height: 120px;
+  }
+}
+
+.title--green {
+  color: rgb(68, 199, 155);
+}
+
+.description {
+  font-family: "Fuse V.2 Display";
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(40, 45, 48);
+}
+
 /* navigation */
 
 .navigation {
@@ -129,31 +156,7 @@ body {
   }
 }
 
-.about__title {
-  font-family: "Fuse V.2 Display";
-  font-size: 56px;
-  line-height: 60px;
-  font-weight: 800;
-  color: rgb(40, 45, 48);
-  margin: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .about__title {
-    font-size: 112px;
-    line-height: 120px;
-  }
-}
-
-.about__title--green {
-  color: rgb(68, 199, 155);
-}
-
 .about__description {
-  font-family: "Fuse V.2 Display";
-  font-size: 16px;
-  line-height: 24px;
-  color: rgb(40, 45, 48);
   max-width: 380px;
   margin: 12px 0px 0px;
 }
@@ -223,4 +226,73 @@ body {
   .about__card:not(:last-of-type) {
     margin-right: 32px;
   }
+}
+
+/* Zašto postati dumpovac? */
+
+@media screen and (min-width: 1100px) {
+  .why__content,
+  .why__header {
+    margin: 0px 216px;
+  }
+}
+
+.why__description {
+  max-width: 488px;
+  margin-bottom: 48px;
+}
+
+.why__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.why__image {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .why__content {
+    flex-direction: row;
+  }
+
+  .why__image--mobile {
+    display: none;
+  }
+
+  .why__image {
+    display: block;
+  }
+
+  .why__cards {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .why__cards {
+    margin-left: 173px;
+  }
+}
+
+.why__card {
+  display: flex;
+  margin-bottom: 80px;
+  max-width: 418px;
+}
+
+.why__card__image {
+  margin-right: 24px;
+}
+
+.why__card__title {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+.why__card__description {
+  margin: 0;
 }
