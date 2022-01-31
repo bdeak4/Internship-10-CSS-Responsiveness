@@ -339,3 +339,107 @@ body {
 .project__card:hover {
   transform: scale(1.05);
 }
+
+/* Nakon prijave */
+
+.after {
+  display: flex;
+  flex-direction: column;
+  margin: 0 25px;
+}
+
+.after__title {
+  color: rgb(40, 45, 48);
+  font-family: "Fuse V.2 Display";
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 60px;
+  margin-bottom: 48px;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .after {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .after__title {
+    line-height: 120px;
+    font-size: 112px;
+    position: sticky;
+    top: 32px;
+  }
+}
+
+.after__card {
+  margin-bottom: 80px;
+  display: flex;
+  max-width: 360px;
+}
+
+.after__card__number {
+  font-size: 56px;
+  line-height: 60px;
+  margin-right: 16px;
+  font-family: "Fuse V.2 Display";
+  font-weight: 800;
+  opacity: 0.4;
+  color: rgb(68, 199, 155);
+}
+
+.after__card__title {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.after__card__description {
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .after__card {
+    max-width: 440px;
+    margin-left: 64px;
+    margin-bottom: 180px;
+  }
+
+  .after__card__number {
+    font-size: 112px;
+    line-height: 120px;
+    margin-right: 32px;
+    position: relative;
+  }
+
+  .after__card__number::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 60px;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+  }
+
+  .after__card:not(:last-of-type) .after__card__number::after {
+    content: "";
+    position: absolute;
+    top: calc(50% + 5px);
+    left: 60px;
+    width: 4px;
+    height: 280px;
+    border-right: 2px dashed rgb(40, 45, 48);
+    opacity: 0.4;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .after__card {
+    margin-left: 128px;
+  }
+}
