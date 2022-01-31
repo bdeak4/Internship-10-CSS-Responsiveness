@@ -296,3 +296,46 @@ body {
 .why__card__description {
   margin: 0;
 }
+
+/* Čime se bavimo u DUMP-u? */
+
+.projects {
+  background-color: #f7f9fb;
+  padding-top: 100px;
+  margin-left: -25px;
+  margin-right: -25px;
+}
+
+.projects__title {
+  color: rgb(40, 45, 48);
+  font-family: "Fuse V.2 Display";
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 60px;
+  margin: 0;
+  padding: 0 25px;
+}
+
+.project__cards {
+  display: flex;
+  overflow-x: scroll;
+  margin-bottom: 100px;
+  padding: 24px 0;
+}
+
+.project__card {
+  margin-right: 32px;
+  transition: transform 200ms ease-out;
+}
+
+.project__card:first-of-type {
+  margin-left: 32px;
+}
+
+.project__card img {
+  border-radius: 32px;
+}
+
+.project__card:hover {
+  transform: scale(1.05);
+}
